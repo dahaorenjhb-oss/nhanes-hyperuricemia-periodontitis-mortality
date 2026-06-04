@@ -1,0 +1,20 @@
+"step_order","step","n_remaining","n_excluded","box_label","excluded_label","y"
+1,"NHANES 2009-2014 participants",30468,0,"NHANES 2009-2014 participants
+N=30,468","",10
+2,"Age >=30 years",14556,15912,"Age >=30 years
+N=14,556","Excluded: 15,912",9
+3,"Mortality linkage eligible",14521,35,"Mortality linkage eligible
+N=14,521","Excluded:     35",8
+4,"Dentate adults",11410,3111,"Dentate adults
+N=11,410","Excluded:  3,111",7
+5,"Complete periodontal examination data",10715,695,"Complete periodontal examination data
+N=10,715","Excluded:    695",6
+6,"CDC/AAP periodontitis computable",10715,0,"CDC/AAP periodontitis computable
+N=10,715","",5
+7,"Serum uric acid available",10188,527,"Serum uric acid available
+N=10,188","Excluded:    527",4
+8,"MORTSTAT and PERMTH_EXM available",10188,0,"MORTSTAT and PERMTH_EXM available
+N=10,188","",3
+9,"Core covariates complete",9069,1119,"Core covariates complete
+N= 9,069","Excluded:  1,119",2
+10,"Final public raw-only analytic sample: N=9018; deaths=743",9018,51,"Final public raw-only analytic sample: N=9018; deaths=743","Excluded:     51",1

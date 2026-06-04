@@ -1,0 +1,3 @@
+"Analysis","Measure","Model N","Model deaths","Estimate (95% CI)","P value","Note"
+"Survey-weighted logistic regression","OR",9018,743,"2.18 (1.45-3.28)","<0.001","Binary-outcome sensitivity; measure differs from Cox HR"
+"Survey-weighted modified Poisson regression","RR",9018,743,"1.76 (1.33-2.33)","<0.001","Binary-outcome sensitivity; measure differs from Cox HR"

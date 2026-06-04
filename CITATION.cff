@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: v21 public raw-to-final NHANES linked mortality repository candidate
+message: Please cite the archived repository DOI and the underlying NHANES/NCHS data sources.
+type: software
+authors:
+  - family-names: AUTHOR TO COMPLETE
+    given-names: AUTHOR TO COMPLETE
+version: v21-author-review
+date-released: 2026-05-05
+identifiers:
+  - type: doi
+    value: AUTHOR TO COMPLETE

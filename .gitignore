@@ -1,0 +1,37 @@
+# R
+.Rhistory
+.Rdata
+.RData
+.Rproj.user
+*.Rproj
+
+# renv library (not the lockfile)
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+
+# Raw data files (large, publicly available from CDC)
+*.XPT
+*.xpt
+*.dat
+*.DAT
+
+# Private derived data
+*_DO_NOT_UPLOAD*
+data_private_DO_NOT_UPLOAD/
+*.rds
+*.rda
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Output directories
+results/
+figures/
+output/
+*.log

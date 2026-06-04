@@ -1,0 +1,5 @@
+"model","complete_case_N","deaths","terms"
+"Model 1",9018,743,"joint_urate_periodontitis + age + sex + race_ethnicity"
+"Model 2",9018,743,"joint_urate_periodontitis + age + sex + race_ethnicity + education + PIR + BMI + smoking_status + log_cotinine"
+"Model 3",9018,743,"joint_urate_periodontitis + age + sex + race_ethnicity + education + PIR + BMI + smoking_status + log_cotinine + diabetes + hypertension + CVD"
+"Model 4",9018,743,"joint_urate_periodontitis + age + sex + race_ethnicity + education + PIR + BMI + smoking_status + log_cotinine + diabetes + hypertension + CVD + egfr + UACR + CKD"

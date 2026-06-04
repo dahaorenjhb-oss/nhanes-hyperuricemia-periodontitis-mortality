@@ -1,0 +1,4 @@
+"file_label","cycle_or_year","module","file_type","download_status","merge_decision","reason"
+"RXQ_RX_F.XPT","2009-2010","medications","XPT","AVAILABLE","aggregated_to_participant_medication_flags_before_analysis","RXQ_RX is one-to-many and is not directly joined to the participant base"
+"RXQ_RX_G.XPT","2011-2012","medications","XPT","AVAILABLE","aggregated_to_participant_medication_flags_before_analysis","RXQ_RX is one-to-many and is not directly joined to the participant base"
+"RXQ_RX_H.XPT","2013-2014","medications","XPT","AVAILABLE","aggregated_to_participant_medication_flags_before_analysis","RXQ_RX is one-to-many and is not directly joined to the participant base"

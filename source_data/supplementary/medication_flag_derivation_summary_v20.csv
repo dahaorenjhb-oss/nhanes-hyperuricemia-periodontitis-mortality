@@ -1,0 +1,3 @@
+"medication_flag","public_raw_source","derivation","participant_level_exported_publicly"
+"urate_lowering_therapy","RXQ_RX_F/G/H.XPT","drug-name match to allopurinol/febuxostat/probenecid/related urate-lowering agents","no"
+"diuretic_use","RXQ_RX_F/G/H.XPT","drug-name match to thiazide/loop/potassium-sparing/related diuretic agents","no"

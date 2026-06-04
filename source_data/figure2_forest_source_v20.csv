@@ -1,0 +1,5 @@
+"model","exposure_group","N","deaths","HR","conf_low","conf_high","p_value","events_in_exposure_group","HR_95CI","P_value","label","display","side_label"
+"Model 4","Normouricemia + none/mild periodontitis",9018,743,1,,,,284,"Reference","","Normouricemia + none/mild periodontitis","Reference","Reference"
+"Model 4","Normouricemia + moderate/severe periodontitis",9018,743,1.15150673686292,0.897813303630542,1.47688585107706,0.266557500564008,245,"1.15 (0.90-1.48)","0.267","Normouricemia + moderate/severe periodontitis","1.15 (0.90-1.48)","Deaths=245; 1.15 (0.90-1.48)"
+"Model 4","Hyperuricemia + none/mild periodontitis",9018,743,1.34791090302534,1.03743272503225,1.75130758713834,0.0254121656708821,114,"1.35 (1.04-1.75)","0.025","Hyperuricemia + none/mild periodontitis","1.35 (1.04-1.75)","Deaths=114; 1.35 (1.04-1.75)"
+"Model 4","Hyperuricemia + moderate/severe periodontitis",9018,743,1.85109114328067,1.3295438561747,2.57722857716844,0.000265439929154044,100,"1.85 (1.33-2.58)","<0.001","Hyperuricemia + moderate/severe periodontitis","1.85 (1.33-2.58)","Deaths=100; 1.85 (1.33-2.58)"

@@ -1,0 +1,5 @@
+"Exposure group","Group N","Deaths in group","Model 1","Model 2","Model 3","Model 4"
+"Normouricemia + none/mild periodontitis",5382,284,"Reference","Reference","Reference","Reference"
+"Normouricemia + moderate/severe periodontitis",2035,245,"1.56 (1.20-2.02)","1.19 (0.92-1.52)","1.18 (0.92-1.52)","1.15 (0.90-1.48)"
+"Hyperuricemia + none/mild periodontitis",1083,114,"1.55 (1.18-2.05)","1.50 (1.14-1.97)","1.45 (1.11-1.89)","1.35 (1.04-1.75)"
+"Hyperuricemia + moderate/severe periodontitis",518,100,"2.58 (1.89-3.52)","2.08 (1.51-2.87)","1.99 (1.44-2.76)","1.85 (1.33-2.58)"
