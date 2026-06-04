@@ -1,14 +1,12 @@
-cmd <- commandArgs(trailingOnly = FALSE)
-file_arg <- grep("^--file=", cmd, value = TRUE)
-run_file <- if (length(file_arg)) sub("^--file=", "", file_arg[[1]]) else file.path(getwd(), "scripts", "run_all_v20_public_raw_primary.R")
-root <- normalizePath(file.path(dirname(run_file), ".."), winslash = "/", mustWork = FALSE)
-if (basename(root) == "v20_public_raw_to_final_primary_reanalysis") {
-  setwd(root)
-} else args <- commandArgs(trailingOnly = FALSE)
+args <- commandArgs(trailingOnly = FALSE)
 file_arg <- grep("^--file=", args, value = TRUE)
 if (length(file_arg)) {
-  script_dir <- dirname(sub("^--file=", "", file_arg[[1]]))
-  setwd(normalizePath(file.path(script_dir, "..")))
+  script_dir <- dirname(normalizePath(sub("^--file=", "", file_arg[[1]]), winslash = "/", mustWork = FALSE))
+  root <- normalizePath(file.path(script_dir, ".."), winslash = "/", mustWork = FALSE)
+  if (file.exists(file.path(root, "scripts", "00_v20_setup_safety_check.R"))) setwd(root)
+}
+if (!file.exists(file.path(getwd(), "scripts", "00_v20_setup_safety_check.R"))) {
+  stop("Run from the repository root, or call with Rscript scripts/run_all_v20_public_raw_primary.R.")
 }
 
 run_step <- function(script) {

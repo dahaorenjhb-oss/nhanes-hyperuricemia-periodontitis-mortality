@@ -105,6 +105,10 @@ All input data are publicly available from U.S. federal sources:
 
 No private or restricted data are included in this repository.
 
+## Repository URL
+
+https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality
+
 ## Citation
 
 If you use this code, please cite:

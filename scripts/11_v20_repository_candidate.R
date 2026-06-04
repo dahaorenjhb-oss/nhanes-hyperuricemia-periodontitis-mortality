@@ -28,9 +28,9 @@ safe_write_lines(c(
 ), file.path(repo, "download_scripts", "01_download_public_nhanes_lmf_raw_files.R"))
 
 safe_write_lines(c(
-  "# v20 public repository candidate",
+  "# Joint Hyperuricemia-Periodontitis Phenotype and Mortality in NHANES",
   "",
-  "This repository candidate supports reproduction of the v20 public raw-only NHANES linked mortality analysis.",
+  "This public reproducibility repository supports reproduction of the NHANES 2009-2014 linked mortality analysis.",
   "",
   "Included:",
   "- R scripts for public raw download, reconstruction, analysis, tables, figures, and validation.",
@@ -44,27 +44,53 @@ safe_write_lines(c(
   "- Private historical comparison data.",
   "- `fallback_nested_audit_dataset.rds`.",
   "",
-  "Status: repository candidate for author review, not final deposition."
+  "Repository URL: https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality"
 ), file.path(repo, "README.md"))
 
 safe_write_lines(c(
-  "# License draft",
+  "MIT License",
   "",
-  "Code: MIT License draft, pending author approval.",
+  "Copyright (c) 2026 The Authors",
   "",
-  "Data: NHANES and NCHS Linked Mortality public-use files remain governed by CDC/NCHS terms. This repository candidate does not redistribute those raw files."
-), file.path(repo, "LICENSE_DRAFT.md"))
+  "Permission is hereby granted, free of charge, to any person obtaining a copy",
+  "of this software and associated documentation files (the \"Software\"), to deal",
+  "in the Software without restriction, including without limitation the rights",
+  "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+  "copies of the Software, and to permit persons to whom the Software is",
+  "furnished to do so, subject to the following conditions:",
+  "",
+  "The above copyright notice and this permission notice shall be included in all",
+  "copies or substantial portions of the Software.",
+  "",
+  "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR",
+  "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,",
+  "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE",
+  "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER",
+  "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,",
+  "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE",
+  "SOFTWARE.",
+  "",
+  "Data note: NHANES and NCHS Linked Mortality public-use files remain governed by CDC/NCHS terms. This repository does not redistribute those raw files."
+), file.path(repo, "LICENSE.md"))
 
 safe_write_lines(c(
   "cff-version: 1.2.0",
-  "title: v20 public raw-only NHANES linked mortality reanalysis",
+  "title: Joint hyperuricemia-periodontitis phenotype and all-cause mortality: NHANES linked mortality reproducibility repository",
   "message: Please cite this repository and the underlying NHANES/NCHS data sources.",
   "type: software",
   "authors:",
-  "  - family-names: AUTHOR_TO_CONFIRM",
-  "    given-names: AUTHOR_TO_CONFIRM",
-  "version: v20-author-review",
-  "date-released: 2026-05-05"
+  "  - family-names: Jin",
+  "    given-names: Haibin",
+  "  - family-names: Zou",
+  "    given-names: Siyu",
+  "  - family-names: Chu",
+  "    given-names: Yiting",
+  "  - family-names: Gong",
+  "    given-names: Aixiu",
+  "version: v1.0.0",
+  "date-released: 2026-06-04",
+  "url: https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality",
+  "license: MIT"
 ), file.path(repo, "CITATION.cff"))
 
 safe_write_lines(c(
@@ -113,7 +139,7 @@ write_all_manifests()
 safe_write_lines(c(
   "# v20 repository candidate report",
   "",
-  paste("Repository candidate path:", repo),
+  "Repository URL: https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality",
   "Participant-level rows: excluded.",
   "Raw XPT/DAT files: excluded.",
   "Private historical comparison data: excluded.",

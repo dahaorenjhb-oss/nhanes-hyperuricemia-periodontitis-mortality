@@ -1,12 +1,17 @@
 cff-version: 1.2.0
-title: v21 public raw-to-final NHANES linked mortality repository candidate
-message: Please cite the archived repository DOI and the underlying NHANES/NCHS data sources.
+title: Joint hyperuricemia-periodontitis phenotype and all-cause mortality: NHANES linked mortality reproducibility repository
+message: Please cite this repository and the underlying NHANES/NCHS data sources.
 type: software
 authors:
-  - family-names: AUTHOR TO COMPLETE
-    given-names: AUTHOR TO COMPLETE
-version: v21-author-review
-date-released: 2026-05-05
-identifiers:
-  - type: doi
-    value: AUTHOR TO COMPLETE
+  - family-names: Jin
+    given-names: Haibin
+  - family-names: Zou
+    given-names: Siyu
+  - family-names: Chu
+    given-names: Yiting
+  - family-names: Gong
+    given-names: Aixiu
+version: v1.0.0
+date-released: 2026-06-04
+url: https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality
+license: MIT

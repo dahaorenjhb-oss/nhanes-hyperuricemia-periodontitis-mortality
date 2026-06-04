@@ -76,9 +76,11 @@ data_avail <- c(
   "",
   "Data Availability",
   "",
-  "The primary analysis can be reproduced from public-use NHANES 2009-2010, 2011-2012, and 2013-2014 raw data files and the public-use 2019 NCHS/CDC Linked Mortality Files. The v20 repository candidate contains download scripts, analysis scripts, aggregate source data for tables and figures, validation outputs, and file manifests. Complete raw NHANES files, Linked Mortality File copies, and participant-level reconstructed analytic datasets are not included in the repository candidate. Users should obtain the public-use raw files from NCHS/CDC using the provided download scripts and comply with the applicable NCHS data-use terms.",
+  "The primary analysis can be reproduced from public-use NHANES 2009-2010, 2011-2012, and 2013-2014 raw data files and the public-use 2019 NCHS/CDC Linked Mortality Files. The public reproducibility repository contains download scripts, analysis scripts, aggregate source data for tables and figures, validation outputs, and file manifests. Complete raw NHANES files, Linked Mortality File copies, and participant-level reconstructed analytic datasets are not included in the repository. Users should obtain the public-use raw files from NCHS/CDC using the provided download scripts and comply with the applicable NCHS data-use terms.",
   "",
-  "Data Availability category: PUBLIC_RAW_TO_FINAL_REPRODUCTION_SUPPORTED_REPOSITORY_CANDIDATE_PENDING_DEPOSITION.",
+  "Public code repository: https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality",
+  "",
+  "Data Availability category: PUBLIC_RAW_TO_FINAL_REPRODUCTION_SUPPORTED_PUBLIC_REPOSITORY.",
   "",
   "No participant-level private derived cohort, no `fallback_nested_audit_dataset.rds`, and no restricted or private data are approved for public release."
 )
@@ -89,9 +91,9 @@ code_avail <- c(
   "",
   "Code Availability",
   "",
-  "The v20 public repository candidate contains R scripts to download public-use files, reconstruct variables, define the public raw-only analytic cohort, fit the prespecified survey-weighted Cox models, run proportional hazards diagnostics, regenerate tables and figures, and validate hashes/manifests. The scripts are intended for author review before repository deposition and manuscript submission.",
+  "The public reproducibility repository contains R scripts to download public-use files, reconstruct variables, define the public raw-only analytic cohort, fit the prespecified survey-weighted Cox models, run proportional hazards diagnostics, regenerate tables and figures, and validate hashes/manifests.",
   "",
-  "The repository candidate intentionally excludes participant-level reconstructed datasets and private historical comparison files."
+  "The repository intentionally excludes participant-level reconstructed datasets and private historical comparison files."
 )
 safe_write_lines(code_avail, v20_path("manuscript_text", "code_availability_statement_v20.md"))
 
@@ -103,7 +105,7 @@ title_claims <- c(
   "Allowed claims:",
   "- Public raw-only NHANES/NCHS linked mortality reanalysis.",
   "- Observational association/risk stratification.",
-  "- Transparent public raw-to-final reproducibility after repository deposition.",
+  "- Transparent public raw-to-final reproducibility through the public code repository.",
   "",
   "Removed or prohibited primary claims:",
   "- The old N=9018/HR=1.95 result as the primary result.",
@@ -142,9 +144,11 @@ safe_write_lines(c(
 safe_write_lines(c(
   "# v20 data/code availability recommendation",
   "",
-  "Recommended category: PUBLIC_RAW_TO_FINAL_REPRODUCTION_SUPPORTED_REPOSITORY_CANDIDATE_PENDING_DEPOSITION.",
+  "Recommended category: PUBLIC_RAW_TO_FINAL_REPRODUCTION_SUPPORTED_PUBLIC_REPOSITORY.",
   "",
-  "Use the v20 Data Availability statement after author review and repository deposition details are confirmed."
+  "Public code repository: https://github.com/dahaorenjhb-oss/nhanes-hyperuricemia-periodontitis-mortality",
+  "",
+  "Add the archived repository DOI after GitHub archival through Zenodo or a similar repository."
 ), v20_path("reports", "v20_data_code_availability_recommendation.md"))
 
 log_action("10 manuscript number patches and internal old-vs-new comparison written.")

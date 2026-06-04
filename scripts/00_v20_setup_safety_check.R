@@ -12,14 +12,18 @@ script_path <- function() {
   normalizePath(of, winslash = "/", mustWork = FALSE)
 }
 
-V20_ROOT <- normalizePath(getwd(), winslash = "/", mustWork = TRUE)
-valid_root_names <- c("v20_public_raw_to_final_primary_reanalysis", "public_repository_candidate")
-if (!basename(V20_ROOT) %in% valid_root_names) {
-  candidate <- normalizePath(file.path(dirname(script_path()), ".."), winslash = "/", mustWork = FALSE)
-  if (basename(candidate) %in% valid_root_names) V20_ROOT <- candidate
+is_v20_root <- function(path) {
+  path <- normalizePath(path, winslash = "/", mustWork = FALSE)
+  file.exists(file.path(path, "scripts", "00_v20_setup_safety_check.R")) &&
+    file.exists(file.path(path, "scripts", "run_all_v20_public_raw_primary.R")) &&
+    file.exists(file.path(path, "config", "public_raw_file_registry_v20.csv"))
 }
-if (!basename(V20_ROOT) %in% valid_root_names) {
-  stop("Run from v20 root, public repository candidate root, or a script path inside one of those roots.")
+
+V20_ROOT <- normalizePath(getwd(), winslash = "/", mustWork = TRUE)
+candidate <- normalizePath(file.path(dirname(script_path()), ".."), winslash = "/", mustWork = FALSE)
+if (!is_v20_root(V20_ROOT) && is_v20_root(candidate)) V20_ROOT <- candidate
+if (!is_v20_root(V20_ROOT)) {
+  stop("Run from the repository root, or call a script inside the repository scripts/ directory.")
 }
 
 PROJECT_ROOT <- normalizePath(file.path(V20_ROOT, ".."), winslash = "/", mustWork = TRUE)

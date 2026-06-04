@@ -89,7 +89,7 @@ status <- if (any(failed)) {
 data_availability_category <- if (status == "NUMERIC_INCONSISTENCY_REQUIRES_AUTHOR_REVIEW") {
   "PUBLIC_RAW_REANALYSIS_REQUIRES_AUTHOR_REVIEW_BEFORE_REPOSITORY_DEPOSITION"
 } else {
-  "PUBLIC_RAW_TO_FINAL_REPRODUCTION_SUPPORTED_REPOSITORY_CANDIDATE_PENDING_DEPOSITION"
+  "PUBLIC_RAW_TO_FINAL_REPRODUCTION_SUPPORTED_PUBLIC_REPOSITORY"
 }
 
 safe_write_lines(c(
@@ -108,7 +108,7 @@ safe_write_lines(c(
   "- Old N=9018/HR=1.95 is historical/private validation only, not the primary result.",
   "- No unsupported causal claim, Fine-Gray model, or GEO claim was added.",
   "",
-  "Not READY FOR FINAL SUBMISSION; author review and repository deposition details remain required."
+  "Ready for code availability review. A DOI can be added after GitHub archival through Zenodo or a similar repository."
 ), v20_path("reports", "v20_final_QA_report.md"))
 
 safe_write_lines(c(
@@ -127,7 +127,7 @@ safe_write_lines(c(
   paste("PH diagnostics pass:", ph_pass),
   paste("Data Availability category:", data_availability_category),
   "",
-  "This is for author review and is not READY FOR FINAL SUBMISSION."
+  "Ready for code availability review. A DOI can be added after GitHub archival through Zenodo or a similar repository."
 ), v20_path("STATUS_v20.md"))
 
 repo <- v20_path("public_repository_candidate")

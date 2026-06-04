@@ -34,4 +34,10 @@ Thumbs.db
 results/
 figures/
 output/
+logs/
+manifest/
+manuscript_text/
+public_repository_candidate/
+README_v20.md
+STATUS_v20.md
 *.log
