@@ -1,6 +1,6 @@
 # v20 final QA report
 
-Final status: FULL_PUBLIC_RAW_TO_FINAL_REANALYSIS_COMPLETED
+Final status: FULL_PUBLIC_RAW_TO_FINAL_REANALYSIS_COMPLETED_FOR_AUTHOR_REVIEW
 Final public raw-only N: 9018
 Final public raw-only deaths: 743
 Primary HR: 1.85 (95% CI 1.33-2.58)

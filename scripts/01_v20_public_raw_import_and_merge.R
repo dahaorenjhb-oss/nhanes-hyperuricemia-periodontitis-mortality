@@ -89,7 +89,17 @@ for (i in seq_len(nrow(required))) {
   log_action(paste("Public raw file checked:", required$file_label[i], required$download_status[i]))
 }
 
+v20_relative_path <- function(path) {
+  root <- normalizePath(V20_ROOT, winslash = "/", mustWork = TRUE)
+  np <- normalizePath(path, winslash = "/", mustWork = FALSE)
+  sub(paste0("^", root, "/"), "", np)
+}
+
 registry_out <- required |>
+  dplyr::mutate(
+    local_path = vapply(local_path, v20_relative_path, character(1)),
+    copied_from_readonly = ifelse(is.na(copied_from_readonly), "", copied_from_readonly)
+  ) |>
   dplyr::select(file_label, data_domain = data_source_name, cycle_or_year = cycle, cycle_suffix, module,
                 file_type, source_url, local_path, download_status, size_bytes, sha256, error_message,
                 copied_from_readonly, required_for = role_in_analysis)
@@ -99,7 +109,7 @@ blocked <- registry_out |> dplyr::filter(!download_status %in% c("COPIED_FROM_RE
 safe_write_csv(registry_out |>
   dplyr::mutate(local_available = file.exists(local_path),
                 special_check = ifelse(file_label %in% c("GHB_F.XPT", "DEMO_H.XPT"), "SPECIFICALLY_VERIFIED", ""),
-                notes = ifelse(local_available, "public raw file available in v20 private cache", "missing")),
+                notes = ifelse(local_available, "public raw file available in local cache after download/check", "missing")),
   v20_path("source_data", "supplementary", "public_raw_file_completeness_check_v20.csv"))
 
 if (nrow(blocked)) {
